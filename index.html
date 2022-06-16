@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PROJECT: ROCK PAPER SCISSORS</title>
+</head>
+<body style="background-color: #C8B4E7; color:black ;">
+	<header class="header">
+		<h1 style="text-align: center;">Rock Paper Scissors Game</h1>
+	</header>
+	<table border="2px" align="center">
+
+<div class="container">
+	<tr>
+	<td style="text-align:center;">    <div class="score-container">
+		    <span class="user">YOU (</span>
+		    <span id="score"></span>
+		    <span class="com"> ) COM</span>
+	    </div>
+	</td>
+	</tr>
+	    <br>
+	<tr><td>
+	    <div class="buttons">
+		    <button id="paper" class="bn" onclick="game(this.value)" value="paper"> Paper </button>
+		    <button id="rock" class="bn" onclick="game(this.value)" value="rock"> Rock </button>
+		    <button id="scissors" class="bn" onclick="game(this.value)" value="scissors"> Scissors </button>
+	   </div>
+	</td></tr>
+	   <br>
+	<div id="challenge">
+		<tr><td>
+	   	<div id="you">
+	   	  <div id="YourObject"></div>
+	   	 <div class="who">You</div>
+	   	</div>
+	   </tr></td>
+	   <tr><td>
+	   	<div id="result">
+	   		<ul>
+	   		<li><p id="who"></p></li>
+	   		</ul>
+	   	</div>
+	   </tr></td>
+	   <tr><td>
+	   	<div id="com">
+	   	   <div id="ComObject"></div>
+	   	   <div class="who">Computer</div>
+	   	</div>
+	   </tr></td>
+	</div>
+</div>
+<script type="text/javascript" src="game.js"></script>
+</table>
+</body>
+</html>
